@@ -2,7 +2,31 @@
  * General
  */
 body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  color: #555;
   padding-top: 60px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  color: #f85c37;
+  word-wrap: break-word;
+  transition: all 500ms ease-in;
+
+  &:hover,
+  &:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:before,
+  &:after {
+    transition: color 0.5s ease-in, background 0.1s ease-in;
+  }
 }
 
 /*
@@ -64,5 +88,19 @@ body {
         }
       }
     }
+  }
+}
+
+/*
+ * Top Navigation Bar
+ */
+.footer {
+  background: #222;
+  text-align: center;
+
+  p {
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
   }
 }
