@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <h1>Steve Aguet</h1>
-            <h3>Web Enthusiast | {{ HTML::obfuscate('steve.aguet@elysion.ch') }}</h3>
+            <h3>Concepteur en multimédia | {{ HTML::obfuscate('steve.aguet@elysion.ch') }}</h3>
         </div>
     </div>
 </header>

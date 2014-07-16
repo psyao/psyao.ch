@@ -3,7 +3,7 @@
         <div class="row">
             <ul class="nav">
                 <li>
-                    <a href="#about" title="About"><i class="glyphicon glyphicon-user"></i></a>
+                    <a href="#about" title="A propos"><i class="fa fa-user"></i></a>
                 </li>
                 <li>
                     <a href="#resume" title="Resume"><i class="glyphicon glyphicon-file"></i></a>

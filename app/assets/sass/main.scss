@@ -166,6 +166,42 @@ a {
 /*
  * Contact Section
  */
+.about {
+  background: #2c3e50;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h4 {
+    color: #fff;
+    margin-top: 17px;
+
+    i {
+      vertical-align: top;
+    }
+  }
+
+  p {
+    margin-top: 17px;
+    padding-left: 0;
+  }
+
+  a {
+    color: #1abc9c;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: #7b7b7b;
+    }
+  }
+
+}
+
+/*
+ * Contact Section
+ */
 .contact {
   background: #2F2F2F;
   color: #fff;
@@ -196,7 +232,6 @@ a {
       }
 
       i {
-//        font-size: 10px;
         padding-right: 10px;
       }
     }
