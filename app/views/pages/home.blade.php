@@ -1,5 +1,5 @@
 @extends('layouts.default')
 
 @section('content')
-Welcome to psyao.ch!
+@include('pages.partials.contact')
 @stop
