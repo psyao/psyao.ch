@@ -19,8 +19,13 @@ h5,
 h6 {
   font-family: "Raleway";
   font-weight: 300;
-  text-transform: uppercase;
   color: #333;
+}
+
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
 }
 
 a {
@@ -62,6 +67,10 @@ a {
   margin-top: -60px;
 }
 
+.centered {
+  text-align: center;
+}
+
 /*
  * Top Navigation Bar
  */
@@ -74,7 +83,6 @@ a {
   overflow: visible;
   background: #2F2F2F;
   line-height: 0;
-  text-align: center;
 
   a {
     color: #fff;
@@ -122,6 +130,36 @@ a {
         }
       }
     }
+  }
+}
+
+/*
+ * Header
+ */
+.header {
+  background: url(../img/header-bg.jpg) no-repeat center top;
+  padding-top: 190px;
+  padding-bottom: 190px;
+  text-align:center;
+  background-color: #1abc9c;
+  background-attachment: relative;
+  background-position: center center;
+  width: 100%;
+  background-size: cover;
+
+  h1,
+  h3 {
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  h1 {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -190,7 +228,6 @@ a {
   }
 
   .social {
-    text-align: center;
     font-size: 40px;
     padding-top: 50px;
     transition: all 500ms ease-in;
@@ -207,7 +244,6 @@ a {
  */
 .footer {
   background: #222;
-  text-align: center;
 
   p {
     color: #fff;

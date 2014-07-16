@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="social">
+            <div class="social centered">
                 <a href="https://www.facebook.com/steve.aguet" title="Profil Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
                 <a href="https://www.linkedin.com/pub/steve-aguet/83/915/48a/" title="Profil LinkedIn" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
                 <a href="https://twitter.com/elysionworkshop" title="Page Twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>

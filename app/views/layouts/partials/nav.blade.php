@@ -1,4 +1,4 @@
-<nav class="topbar">
+<nav class="topbar centered">
     <div class="container">
         <div class="row">
             <ul class="nav">
