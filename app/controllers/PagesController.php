@@ -1,7 +1,18 @@
 <?php
 
+use Psyao\Educations\EducationRepository;
+
 class PagesController extends BaseController
 {
+    /**
+     * @var EducationRepository
+     */
+    protected $educations;
+
+    function __construct(EducationRepository $educations)
+    {
+        $this->educations = $educations;
+    }
 
     /**
      * Display the home page.
@@ -11,7 +22,9 @@ class PagesController extends BaseController
      */
     public function home()
     {
-        return View::make('pages.home');
+        $educations = $this->educations->getAll();
+
+        return View::make('pages.home', compact('educations'));
     }
 
 }

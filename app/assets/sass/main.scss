@@ -200,6 +200,60 @@ a {
 }
 
 /*
+ * Resume Section
+ */
+.resume {
+  h4 {
+    margin-top: 17px;
+
+    i {
+      vertical-align: top;
+    }
+  }
+
+  h5 {
+    margin-top: 21px;
+    color: #34495e;
+    font-weight: 700;
+
+  }
+
+  ul,
+  ol {
+    margin-top: 17px;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-top: 10px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      i {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  a {
+    color: #1abc9c;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: #7b7b7b;
+    }
+  }
+
+  .degree {
+    font-style: italic;
+  }
+}
+
+/*
  * Contact Section
  */
 .contact {

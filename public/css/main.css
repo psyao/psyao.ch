@@ -135,6 +135,34 @@ a {
       color: #7b7b7b; }
 
 /*
+ * Resume Section
+ */
+.resume h4 {
+  margin-top: 17px; }
+  .resume h4 i {
+    vertical-align: top; }
+.resume h5 {
+  margin-top: 21px;
+  color: #34495e;
+  font-weight: 700; }
+.resume ul, .resume ol {
+  margin-top: 17px;
+  padding-left: 0;
+  list-style: none; }
+  .resume ul li, .resume ol li {
+    margin-top: 10px; }
+    .resume ul li:first-child, .resume ol li:first-child {
+      margin-top: 0; }
+    .resume ul li i, .resume ol li i {
+      padding-right: 10px; }
+.resume a {
+  color: #1abc9c; }
+  .resume a:hover, .resume a:focus, .resume a:active, .resume a.active {
+    color: #7b7b7b; }
+.resume .degree {
+  font-style: italic; }
+
+/*
  * Contact Section
  */
 .contact {

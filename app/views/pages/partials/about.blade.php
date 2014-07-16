@@ -20,7 +20,7 @@
                     Je suis actuellement en quête de nouveaux défis!
                 </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <p><a href="files/cv_steve_aguet.pdf"><i class="fa fa-file"></i> Télécharger le PDF</a></p>
             </div>
         </div>
