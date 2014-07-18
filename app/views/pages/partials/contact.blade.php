@@ -1,9 +1,9 @@
-<section class="contact">
+<section class="contact white">
     <div id="contact" class="anchor">&nbsp;</div>
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <h4><i class="fa fa-map-marker"></i> Contact</h4>
+                <h3 class="white"><i class="fa fa-map-marker"></i> Contact</h3>
             </div>
             <div class="col-md-4">
                 <ul>
@@ -15,7 +15,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2747.291606178546!2d6.456876599999999!3d46.482538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c38240d5ccf43%3A0x971b146567d67a46!2sRue+de+la+Gare+3%2C+1162+Saint-Prex%2C+Suisse!5e0!3m2!1sfr!2s!4v1405501191233" frameborder="0"></iframe>
             </div>
             <div class="col-md-2">
-                <h4><i class="fa fa-comment"></i> Message</h4>
+                <h3 class="white"><i class="fa fa-comment"></i> Message</h3>
             </div>
             <div class="col-md-4">
                 {{ Form::open(['role' => 'form']) }}

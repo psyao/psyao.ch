@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-md-offset-1">
-                <h4><i class="fa fa-user"></i> A propos</h4>
+                <h3 class="white"><i class="fa fa-user"></i> A propos</h3>
             </div>
             <div class="col-md-6">
                 <p>
