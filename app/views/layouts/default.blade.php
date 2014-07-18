@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:300,400,700">
     <link rel="stylesheet" href="css/main.css"/>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-default">
 
 @include('layouts.partials.nav')
 
-@yield('content')
+<div class="wrapper">
+    @yield('content')
+</div>
 
 @include('layouts.partials.footer')
 

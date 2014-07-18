@@ -54,6 +54,7 @@
 
         <!-- Eduction -->
         <div class="row resume-element">
+            <div id="education" class="anchor">&nbsp;</div>
             <div class="col-md-2 col-md-offset-1">
                 <h3><i class="fa fa-university"></i> Formation</h3>
             </div>

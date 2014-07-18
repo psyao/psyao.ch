@@ -1,0 +1,21 @@
+/*
+ * About Section
+ */
+.about {
+  background: #2c3e50;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  a {
+    color: #1abc9c;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: #7b7b7b;
+    }
+  }
+
+}

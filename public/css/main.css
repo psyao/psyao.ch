@@ -2,6 +2,7 @@
  * General
  */
 body {
+  position: relative;
   background-color: #f2f2f2;
   font-family: "Lato";
   font-weight: 300;
@@ -38,37 +39,28 @@ h5 {
   line-height: 20px;
   margin-top: 5px; }
 
-p, ul, ol {
+.wrapper p, .wrapper ul, .wrapper ol {
   margin-top: 15px;
   margin-bottom: 5px; }
-  p:first-child, ul:first-child, ol:first-child {
+  .wrapper p:first-child, .wrapper ul:first-child, .wrapper ol:first-child {
     margin-top: 5px; }
-
-ul, ol {
+.wrapper ul, .wrapper ol {
   padding-left: 0;
   list-style: none; }
-
-li {
+.wrapper li {
   margin-top: 10px; }
-  li:first-child {
+  .wrapper li:first-child {
     margin-top: 0; }
-  li i {
+  .wrapper li i {
     padding-right: 10px; }
 
 a {
   color: #f85c37;
-  word-wrap: break-word;
-  -webkit-transition: all 500ms ease-in;
-       -o-transition: all 500ms ease-in;
-          transition: all 500ms ease-in; }
+  word-wrap: break-word; }
   a:hover, a:focus, a:active, a.active {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0; }
-  a:before, a:after {
-    -webkit-transition: color 0.5s ease-in, background 0.1s ease-in;
-         -o-transition: color 0.5s ease-in, background 0.1s ease-in;
-            transition: color 0.5s ease-in, background 0.1s ease-in; }
 
 .btn-green {
   background-color: #1abc9c;
@@ -80,7 +72,7 @@ a {
 
 .anchor {
   position: absolute;
-  margin-top: -60px; }
+  margin-top: -70px; }
 
 .centered {
   text-align: center; }
@@ -94,8 +86,61 @@ a {
 /*
  * Top Navigation Bar
  */
+.navbar-default {
+  background-color: #2F2F2F; }
+  .navbar-default .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed; }
+    .navbar-default .navbar-nav > li > a {
+      color: #fff;
+      border-bottom: 4px solid transparent;
+      padding: 20px 17px 16px; }
+      .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        color: #fff;
+        border-bottom: 4px solid #f85c37; }
+    .navbar-default .navbar-nav > li > .dropdown-menu {
+      background-color: #393939;
+      border: none;
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      padding: 0; }
+      .navbar-default .navbar-nav > li > .dropdown-menu a {
+        color: #fff;
+        padding: 8px 10px;
+        border-left: 4px solid transparent; }
+        .navbar-default .navbar-nav > li > .dropdown-menu a:hover, .navbar-default .navbar-nav > li > .dropdown-menu a:focus {
+          background-color: #393939;
+          border-left: 4px solid #f85c37; }
+        .navbar-default .navbar-nav > li > .dropdown-menu a > i {
+          padding-right: 20px; }
+      .navbar-default .navbar-nav > li > .dropdown-menu > .active > a, .navbar-default .navbar-nav > li > .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav > li > .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #393939;
+        border-left: 4px solid #f85c37; }
+      .navbar-default .navbar-nav > li > .dropdown-menu .divider {
+        background-color: transparent;
+        margin: 4px 0; }
+    .navbar-default .navbar-nav > li > a > i {
+      font-size: 24px; }
+    .navbar-default .navbar-nav > .active > a {
+      color: #fff;
+      background-color: #393939;
+      border-bottom: 4px solid #f85c37; }
+      .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        color: #fff;
+        background-color: #393939; }
+    .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+      color: #fff;
+      background-color: transparent; }
+
+.navbar-fixed-top {
+  border: none; }
+
 .topbar {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -126,10 +171,7 @@ a {
         .topbar ul li a:hover, .topbar ul li a:focus, .topbar ul li a:active, .topbar ul li a.active {
           color: #fff;
           background: transparent;
-          border-bottom: 4px solid #f85c37;
-          -webkit-transition: all 300ms ease-in;
-               -o-transition: all 300ms ease-in;
-                  transition: all 300ms ease-in; }
+          border-bottom: 4px solid #f85c37; }
         .topbar ul li a i {
           font-size: 20px; }
 
@@ -207,10 +249,7 @@ a {
     margin-bottom: 10px; }
   .contact .social {
     font-size: 40px;
-    padding-top: 50px;
-    -webkit-transition: all 500ms ease-in;
-         -o-transition: all 500ms ease-in;
-            transition: all 500ms ease-in; }
+    padding-top: 50px; }
     .contact .social a {
       margin: 0 25px; }
 
