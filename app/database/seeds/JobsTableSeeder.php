@@ -1,8 +1,9 @@
 <?php
 
-use Psyao\Occupations\CompanyRepository;
-use Psyao\Occupations\Job;
-use Psyao\Occupations\JobRepository;
+use Psyao\Resume\Company;
+use Psyao\Resume\CompanyRepository;
+use Psyao\Resume\Job;
+use Psyao\Resume\JobRepository;
 
 class JobsTableSeeder extends Seeder
 {
@@ -33,32 +34,52 @@ class JobsTableSeeder extends Seeder
 
             foreach ($company['jobs'] as $job)
             {
-                $this->jobRepository->save(
-                    Job::practice(
-                        $job['title'],
-                        $job['from'],
-                        $job['to'],
-                        $job['description']
-                    ),
-                    $currentCompany->id
-                );
+                $this->saveJob($job, $currentCompany->id);
 
-                if($currentCompany->from == null || $job['from']->lt($currentCompany->from))
-                {
-                    $currentCompany->from = $job['from'];
-                }
-
-                if($currentCompany->to == null || $job['to']->gt($currentCompany->to))
-                {
-                    $currentCompany->to = $job['to'];
-                }
-
-                if($currentCompany->isDirty())
-                {
-                    $currentCompany->save();
-                }
+                $this->updateCompanyDates($currentCompany, $job);
             }
         }
+    }
+
+    /**
+     * @param array   $job
+     * @param integer $companyId
+     */
+    private function saveJob(array $job, $companyId)
+    {
+        $this->jobRepository->save(
+            Job::practice(
+                $job['title'],
+                $job['from'],
+                $job['to'],
+                $job['description']
+            ),
+            $companyId
+        );
+    }
+
+    /**
+     * @param Company $company
+     * @param array   $job
+     */
+    private function updateCompanyDates(Company $company, array $job)
+    {
+        if ($company->from == null || $job['from']->lt($company->from))
+        {
+            $company->from = $job['from'];
+        }
+
+        if ($company->to == null || $job['to']->gt($company->to))
+        {
+            $company->to = $job['to'];
+        }
+
+        if ($company->isDirty())
+        {
+            $company->save();
+        }
+
+        return;
     }
 
 }

@@ -1,9 +1,9 @@
-<?php namespace Psyao\Occupations;
+<?php namespace Psyao\Resume;
 
 /**
  * Class JobRepository
  *
- * @package Psyao\Occupations
+ * @package Psyao\Resume
  */
 class JobRepository
 {

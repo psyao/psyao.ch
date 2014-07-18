@@ -1,9 +1,7 @@
 <?php
 
-use Psyao\Occupations\Company;
-use Psyao\Occupations\CompanyRepository;
-use Psyao\Occupations\Job;
-use Psyao\Occupations\JobRepository;
+use Psyao\Resume\Company;
+use Psyao\Resume\CompanyRepository;
 
 class CompaniesTableSeeder extends Seeder
 {
@@ -11,15 +9,10 @@ class CompaniesTableSeeder extends Seeder
      * @var CompanyRepository
      */
     protected $companyRepository;
-    /**
-     * @var JobRepository
-     */
-    protected $jobRepository;
 
-    function __construct(CompanyRepository $companyRepository, JobRepository $jobRepository)
+    function __construct(CompanyRepository $companyRepository)
     {
         $this->companyRepository = $companyRepository;
-        $this->jobRepository = $jobRepository;
     }
 
     public function run()
@@ -30,14 +23,22 @@ class CompaniesTableSeeder extends Seeder
 
         foreach ($companies as $company)
         {
-            $this->companyRepository->save(
-                Company::enrole(
-                    $company['name'],
-                    $company['location'],
-                    $company['featured']
-                )
-            );
+            $this->saveCompany($company);
         }
+    }
+
+    /**
+     * @param array $company
+     */
+    private function saveCompany(array $company)
+    {
+        $this->companyRepository->save(
+            Company::enrole(
+                $company['name'],
+                $company['location'],
+                $company['featured']
+            )
+        );
     }
 
 }

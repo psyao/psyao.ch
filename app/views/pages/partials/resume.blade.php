@@ -2,54 +2,55 @@
     <div id="resume" class="anchor">&nbsp;</div>
     <div class="container">
         <!-- Occupation -->
-        <div class="row">
+        <div class="row resume-element">
             <div class="col-md-2 col-md-offset-1">
                 <h3><i class="fa fa-building"></i> Expériences</h3>
             </div>
-            <div class="col-md-9 hr element">
+            <div class="col-md-9 hr">
                 @unless($companies->count())
-                <div class="row ">
+                <div class="row">
                     <div class="col-md-12">
                         <p class="item">Il n'y a aucune expérience!</p>
                     </div>
                 </div>
                 @else
-                    @foreach($companies as $company)
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>{{ $company->name }}, {{ $company->location }}</h4>
-                        </div>
+                @foreach($companies as $company)
+                <div class="row resume-element-item">
+                    <div class="col-md-12">
+                        <h4>{{ $company->name }}, {{ $company->location }}</h4>
+                    </div>
 
-                        @unless($company->jobs->count())
-                        <div class="col-md-12 item">
-                            <p>Il n'y a aucun emploi à afficher!</p>
-                        </div>
-                        @else
-                            @foreach($company->jobs as $job)
-                            <div class="col-md-8 item">
-                                <h5>{{ $job->title }}</h5>
+                    @unless($company->jobs->count())
+                    <div class="col-md-12 item">
+                        <p>Il n'y a aucun emploi!</p>
+                    </div>
+                    @else
+                    @foreach($company->jobs as $job)
+                    <div class="col-md-8 item">
+                        <h5>{{ $job->title }}</h5>
 
-                                @if( $job->description )
-                                <p>{{ $job->description }}</p>
-                                @endif
-                            </div>
+                        @if( $job->description )
+                        <p>{{ $job->description }}</p>
+                        @endif
+                    </div>
 
-                            <div class="col-md-4">
-                                <p>{{ $job->from->format('m.Y') }} -
-                                    @if( ! is_null($job->to))
-                                    {{ $job->to->format('m.Y') }}
-                                    @else
-                                    A ce jour
-                                    @endif
-                                </p>
-                            </div>
-                            @endforeach
-                        @endunless
+                    <div class="col-md-4">
+                        <p>{{ $job->from->format('m.Y') }} -
+                            @if( ! is_null($job->to))
+                            {{ $job->to->format('m.Y') }}
+                            @else
+                            A ce jour
+                            @endif
+                        </p>
                     </div>
                     @endforeach
+                    @endunless
+                </div>
+                @endforeach
                 @endunless
             </div>
         </div>
+        <!-- /Occupation -->
 
         <!-- Eduction -->
         <div class="row resume-element">

@@ -1,11 +1,11 @@
-<?php namespace Psyao\Occupations;
+<?php namespace Psyao\Resume;
 
 use Carbon\Carbon;
 
 /**
  * Class CompanyRepository
  *
- * @package Psyao\Occupations
+ * @package Psyao\Resume
  */
 class CompanyRepository
 {
@@ -52,7 +52,7 @@ class CompanyRepository
     }
 
     /**
-     * Persist a new occupation.
+     * Persist a new company.
      *
      * @param Company $company
      *
