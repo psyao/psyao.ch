@@ -1,17 +1,23 @@
 <?php
 
-use Psyao\Educations\EducationRepository;
+use Psyao\Occupations\CompanyRepository;
+use Psyao\Educations\InstituteRepository;
 
 class PagesController extends BaseController
 {
     /**
-     * @var EducationRepository
+     * @var CompanyRepository
      */
-    protected $educations;
+    protected $companyRepository;
+    /**
+     * @var InstituteRepository
+     */
+    protected $instituteRepository;
 
-    function __construct(EducationRepository $educations)
+    function __construct(CompanyRepository $companyRepository, InstituteRepository $instituteRepository)
     {
-        $this->educations = $educations;
+        $this->companyRepository = $companyRepository;
+        $this->instituteRepository = $instituteRepository;
     }
 
     /**
@@ -22,9 +28,10 @@ class PagesController extends BaseController
      */
     public function home()
     {
-        $educations = $this->educations->getAll();
+        $companies = $this->companyRepository->getAll();
+        $institutes = $this->instituteRepository->getAll();
 
-        return View::make('pages.home', compact('educations'));
+        return View::make('pages.home', compact('companies', 'institutes'));
     }
 
 }

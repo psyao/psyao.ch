@@ -1,34 +1,108 @@
 <section class="resume">
     <div id="resume" class="anchor">&nbsp;</div>
     <div class="container">
+        <!-- Occupation -->
         <div class="row">
             <div class="col-md-2 col-md-offset-1">
-                <h4><i class="fa fa-university"></i> Formations</h4>
+                <h3><i class="fa fa-building"></i> Expériences</h3>
             </div>
-            <div class="col-md-9">
-                @foreach($educations as $education)
-                <div class="row">
-                    <div class="col-md-8">
-                        <h5>{{ $education->title }}</h5>
-                        <ul>
-                            <li>{{ $education->field }}</li>
-                            <li>{{ $education->school }}, {{ $education->location }}</li>
-                            @if( $education->degree )
-                            <li class="degree">{{ $education->degree }}</li>
-                            @endif
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>{{ $education->from->format('d.m.Y') }} - {{ $education->to->format('d.m.Y') }}</li>
-                            @if( $education->current )
-                            <li>En cours</li>
-                            @endif
-                        </ul>
+            <div class="col-md-9 hr element">
+                @unless($companies->count())
+                <div class="row ">
+                    <div class="col-md-12">
+                        <p class="item">Il n'y a aucune expérience!</p>
                     </div>
                 </div>
-                @endforeach
+                @else
+                    @foreach($companies as $company)
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>{{ $company->name }}, {{ $company->location }}</h4>
+                        </div>
+
+                        @unless($company->jobs->count())
+                        <div class="col-md-12 item">
+                            <p>Il n'y a aucun emploi à afficher!</p>
+                        </div>
+                        @else
+                            @foreach($company->jobs as $job)
+                            <div class="col-md-8 item">
+                                <h5>{{ $job->title }}</h5>
+
+                                @if( $job->description )
+                                <p>{{ $job->description }}</p>
+                                @endif
+                            </div>
+
+                            <div class="col-md-4">
+                                <p>{{ $job->from->format('m.Y') }} -
+                                    @if( ! is_null($job->to))
+                                    {{ $job->to->format('m.Y') }}
+                                    @else
+                                    A ce jour
+                                    @endif
+                                </p>
+                            </div>
+                            @endforeach
+                        @endunless
+                    </div>
+                    @endforeach
+                @endunless
             </div>
         </div>
+
+        <!-- Eduction -->
+        <div class="row resume-element">
+            <div class="col-md-2 col-md-offset-1">
+                <h3><i class="fa fa-university"></i> Formation</h3>
+            </div>
+            <div class="col-md-9 hr">
+                @unless($institutes->count())
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="item">Il n'y a aucun établissement!</p>
+                    </div>
+                </div>
+                @else
+                @foreach($institutes as $institute)
+                <div class="row resume-element-item">
+                    <div class="col-md-12">
+                        <h4>{{ $institute->name }}, {{ $institute->location }}</h4>
+                    </div>
+
+                    @unless($institute->courses->count())
+                    <div class="col-md-12 item">
+                        <p>Il n'y a aucune orientation!</p>
+                    </div>
+                    @else
+                    @foreach($institute->courses as $course)
+                    <div class="col-md-8 item">
+                        <h5>{{ $course->title }}</h5>
+
+                        <ul>
+                            <li>{{ $course->domain }}</li>
+                            @if( $course->diploma )
+                            <li class="italic">{{ $course->diploma }}</li>
+                            @endif
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p>{{ $course->from->format('m.Y') }} -
+                            @if( ! is_null($job->to))
+                            {{ $course->to->format('m.Y') }}
+                            @else
+                            A ce jour
+                            @endif
+                        </p>
+                    </div>
+                    @endforeach
+                    @endunless
+                </div>
+                @endforeach
+                @endunless
+            </div>
+        </div>
+        <!-- /Eduction -->
     </div>
 </section>
