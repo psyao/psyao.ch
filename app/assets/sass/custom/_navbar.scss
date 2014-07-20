@@ -1,0 +1,72 @@
+/*
+ * Top Navigation Bar
+ */
+.navbar-default {
+  border: none;
+
+  .navbar-nav {
+    & > li {
+
+      & > a {
+        border-bottom: 4px solid transparent;
+        padding: 20px 17px 16px;
+
+        &:hover,
+        &:focus {
+          border-bottom-color: $brand-danger;
+        }
+
+        & > i {
+          font-size: 24px;
+        }
+      }
+
+      & > .active > a {
+        border-bottom-color: $brand-danger;
+      }
+
+      & > .dropdown-menu {
+        background-color: $gray-dark;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+
+        a {
+          color: #fff;
+          padding: 8px 10px;
+          border-left: 4px solid transparent;
+
+          &:hover,
+          &:focus {
+            background-color: $gray-darker;
+            border-left-color: $brand-danger;
+          }
+
+          & > i {
+            padding-right: 20px;
+          }
+        }
+
+        & > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            background-color: $gray-darker;
+            border-left-color: $brand-danger;
+          }
+        }
+
+        .divider {
+          background-color: transparent;
+          margin: 4px 0;
+        }
+      }
+
+
+    }
+  }
+}
+
+.navbar-fixed-top {
+  border: none;
+}

@@ -8,11 +8,8 @@
   padding-bottom: 50px;
 
   a {
-    color: $alert-success-bg;
-
     &:hover,
     &:focus {
-      color: $gray-light;
       text-decoration: none;
     }
   }

@@ -1,9 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-
+            <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#about" title="A propos"><i class="fa fa-user fa-fw"></i></a>
                 </li>
@@ -18,6 +16,6 @@
                     <a href="#contact" title="Contact"><i class="fa fa-envelope fa-fw"></i></a>
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
