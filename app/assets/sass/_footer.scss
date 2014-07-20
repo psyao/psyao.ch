@@ -2,11 +2,17 @@
  * Footer
  */
 .footer {
-  background: #222;
+  color: #fff;
+  background: $gray-darker;
+  padding: 20px 0;
 
-  p {
-    color: #fff;
-    margin: 0;
-    padding: 20px 0;
+  a {
+    color: $alert-danger-bg;
+
+    &:hover,
+    &:focus {
+      color: $gray-light;
+      text-decoration: none;
+    }
   }
 }

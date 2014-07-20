@@ -4958,8 +4958,11 @@ h5 {
  * Footer
  */
 .footer {
-  background: #222; }
-  .footer p {
-    color: #fff;
-    margin: 0;
-    padding: 20px 0; }
+  color: #fff;
+  background: #222222;
+  padding: 20px 0; }
+  .footer a {
+    color: #E74C3C; }
+    .footer a:hover, .footer a:focus {
+      color: #777777;
+      text-decoration: none; }
