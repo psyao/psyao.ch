@@ -1,0 +1,20 @@
+{
+    "event": "suiteStart",
+    "suite": "functional",
+    "tests": 1
+}{
+    "event": "testStart",
+    "suite": "functional",
+    "test": "send a message (PostMessageCept)"
+}{
+    "event": "test",
+    "suite": "functional",
+    "test": "send a message (PostMessageCept)",
+    "status": "pass",
+    "time": 2.4591641426086,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}

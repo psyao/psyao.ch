@@ -121,6 +121,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Laracasts\Commander\CommanderServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider',
+        'Laracasts\Validation\ValidationServiceProvider',
 
 	),
 
@@ -188,6 +191,7 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+        'Flash'             => 'Laracasts\Flash\Flash',
 
 	),
 

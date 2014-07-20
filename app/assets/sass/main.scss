@@ -1,6 +1,10 @@
+// Core variables and mixins
+@import "bootstrap";
+
+
 /*
- * General
- */
+* General
+*/
 body {
   position: relative;
   background-color: #f2f2f2;
@@ -8,8 +12,6 @@ body {
   font-weight: 300;
   color: #555;
   padding-top: 60px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
 }
 
 h1,
@@ -87,34 +89,6 @@ h5 {
   }
 }
 
-a {
-  color: #f85c37;
-  word-wrap: break-word;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-  }
-}
-
-.btn-green {
-  background-color: #1abc9c;
-  border-color: #1aa888;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    color: #fff;
-    background-color: #1aa888;
-    border-color: #1a9e7f;
-  }
-}
-
 .anchor {
   position: absolute;
   margin-top: -70px;
@@ -132,9 +106,17 @@ a {
   color: white;
 }
 
+// Core CSS
+@import 'custom/forms';
+
+// Components
+@import 'custom/alerts';
+
+// Sections
+@import 'contact';
+
 @import 'navbar';
 @import 'header';
 @import 'about';
 @import 'resume';
-@import 'contact';
 @import 'footer';

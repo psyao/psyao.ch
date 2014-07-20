@@ -1,7 +1,18 @@
 <?php
 
 /**
- * Pages
+ * Home
  */
-Route::get('/', 'PagesController@home');
+Route::get('/', [
+    'as' => 'home',
+    'uses' => 'PagesController@home'
+]);
+
+/**
+ * Contact
+ */
+Route::post('contact', [
+    'as' => 'contact_path',
+    'uses' => 'ContactController@store'
+]);
 

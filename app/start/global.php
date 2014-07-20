@@ -51,6 +51,13 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
+App::error(function (Laracasts\Validation\FormValidationException $exception, $code)
+{
+    Flash::error('Le formulaire que vous avez soumis comporte des erreurs!');
+
+    return Redirect::back()->withInput()->withErrors($exception->getErrors());
+});
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler

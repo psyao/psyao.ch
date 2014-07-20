@@ -1,0 +1,43 @@
+.form-control {
+  border: none;
+  box-shadow: none;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+    background-color: $gray-lighter;
+  }
+}
+
+.has-error {
+  .form-control {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &,
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .help-block {
+    background-color: $brand-danger;
+    margin-top: 0;
+    font-size: $font-size-small;
+    padding: $padding-small-vertical $padding-small-horizontal;
+    //    font-weight: 400;
+    border-bottom-left-radius: $input-border-radius;
+    border-bottom-right-radius: $input-border-radius;
+  }
+}
+
+//.btn {
+//  &,
+//  &:focus,
+//  &:active {
+//    border: none;
+//    box-shadow: none;
+//    outline: 0;
+//  }
+//}

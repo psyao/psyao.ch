@@ -1,4 +1,4 @@
-<section class="contact white">
+<section class="contact">
     <div id="contact" class="anchor">&nbsp;</div>
     <div class="container">
         <div class="row">
@@ -18,40 +18,38 @@
                 <h3 class="white"><i class="fa fa-comment"></i> Message</h3>
             </div>
             <div class="col-md-4">
-                {{ Form::open(['role' => 'form']) }}
+                {{ Form::open(['route' => 'contact_path', 'role' => 'form']) }}
                     <!-- Name Form Input -->
-                    <div class="form-group">
-                        {{ Form::label('Name', 'Nom:', ['class' => 'sr-only']) }}
-                        {{ Form::text('Name', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre Nom', 'required']) }}
+                    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                        {{ Form::label('name', 'Nom:', ['class' => 'sr-only']) }}
+                        {{ Form::text('name', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre Nom']) }}
+                        {{ ($errors->has('name') ? '<span class="help-block has-error">' . $errors->first('name') . '</span>' : '') }}
                     </div>
 
                     <!-- Email Form Input -->
-                    <div class="form-group">
+                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         {{ Form::label('email', 'Email:', ['class' => 'sr-only']) }}
-                        {{ Form::email('email', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre Email', 'required']) }}
-                    </div>
-
-                    <!-- Phone Form Input -->
-                    <div class="form-group">
-                        {{ Form::label('phone', 'Téléphone:', ['class' => 'sr-only']) }}
-                        {{ Form::text('phone', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre Téléphone']) }}
+                        {{ Form::text('email', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre Email']) }}
+                        {{ ($errors->has('email') ? '<span class="help-block has-error">' . $errors->first('email') . '</span>' : '') }}
                     </div>
 
                     <!-- Subject Form Input -->
-                    <div class="form-group">
+                    <div class="form-group{{ $errors->has('subject') ? ' has-error' : '' }}">
                         {{ Form::label('subject', 'Sujet:', ['class' => 'sr-only']) }}
-                        {{ Form::text('subject', null, ['class' => 'form-control input-sm', 'placeholder' => 'Le Sujet', 'required']) }}
+                        {{ Form::text('subject', null, ['class' => 'form-control input-sm', 'placeholder' => 'Le Sujet']) }}
+                        {{ ($errors->has('subject') ? '<span class="help-block has-error">' . $errors->first('subject') . '</span>' : '') }}
                     </div>
 
-                    <!-- Message Form Input -->
-                    <div class="form-group">
-                        {{ Form::label('message', 'Message:', ['class' => 'sr-only']) }}
-                        {{ Form::textarea('message', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre message', 'required']) }}
+                    <!-- Body Form Input -->
+                    <div class="form-group{{ $errors->has('body') ? ' has-error' : '' }}">
+                        {{ Form::label('body', 'Message:', ['class' => 'sr-only']) }}
+                        {{ Form::textarea('body', null, ['class' => 'form-control input-sm', 'placeholder' => 'Votre message']) }}
+                        {{ ($errors->has('body') ? '<span class="help-block has-error">' . $errors->first('body') . '</span>' : '') }}
                     </div>
 
                     <!-- Form Submit Button -->
                     <div class="form-group">
-                        {{ Form::submit('Envoyer', ['class' => 'btn btn-green btn-block']) }}
+                        {{ Form::submit('Envoyer', ['class' => 'btn btn-success btn-block']) }}
                     </div>
                 {{ Form::close() }}
             </div>
