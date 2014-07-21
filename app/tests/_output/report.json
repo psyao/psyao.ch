@@ -11,7 +11,7 @@
     "suite": "functional",
     "test": "send a message (PostMessageCept)",
     "status": "pass",
-    "time": 2.4591641426086,
+    "time": 2.652624130249,
     "trace": [
 
     ],

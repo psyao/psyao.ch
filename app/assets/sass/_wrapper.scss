@@ -1,0 +1,33 @@
+//
+// Wrapper
+// --------------------------------------------------
+.wrapper {
+  p,
+  ul,
+  ol {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-top: 5px;
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    i {
+      padding-right: 10px;
+    }
+  }
+}

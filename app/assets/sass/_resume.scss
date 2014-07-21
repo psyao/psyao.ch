@@ -1,42 +1,27 @@
-/*
- * Resume Section
- */
+//
+// Resume
+// --------------------------------------------------
 .resume {
   padding-top: 50px;
   padding-bottom: 50px;
 
   &-element {
-    margin-top: 45px;
+    margin-bottom: 45px;
 
-    &:first-child {
-      margin-top: 0;
+    &:last-child {
+      margin-bottom: 0;
     }
 
     &-item {
-      margin-top: 30px;
+      margin-bottom: 30px;
 
-      &:first-child {
-        margin-top: 0;
+      &:last-child {
+        margin-bottom: 0;
       }
 
       .item p {
         margin-bottom: 30px;
       }
-    }
-
-    //    .item p {
-    //      margin-top: 20px;
-    //    }
-  }
-
-  a {
-    color: #1abc9c;
-
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: #7b7b7b;
     }
   }
 

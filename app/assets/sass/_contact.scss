@@ -1,11 +1,15 @@
-/*
- * Contact Section
- */
+//
+// Contact
+// --------------------------------------------------
 .contact {
   color: #fff;
   background: $gray-dark;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  h3, .h3 {
+    color: #fff;
+  }
 
   a {
     &:hover,

@@ -84,7 +84,7 @@
                         <ul>
                             <li>{{ $course->domain }}</li>
                             @if( $course->diploma )
-                            <li class="italic">{{ $course->diploma }}</li>
+                            <li><em>{{ $course->diploma }}</em></li>
                             @endif
                         </ul>
                     </div>

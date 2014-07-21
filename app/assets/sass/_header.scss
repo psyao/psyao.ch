@@ -1,16 +1,17 @@
-/*
- * Header
- */
+//
+// Header
+// --------------------------------------------------
 .header {
-  background: url(../img/header-bg.jpg) no-repeat center top;
   padding-top: 190px;
   padding-bottom: 190px;
   text-align: center;
-  background-color: #1abc9c;
-  background-attachment: relative;
-  background-position: center center;
+  background: $gray-dark url(../img/header-bg.jpg) no-repeat center center;
   width: 100%;
   background-size: cover;
+
+  h1 {
+    font-size: 80px;
+  }
 
   h1,
   h3 {

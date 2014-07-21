@@ -1,4 +1,4 @@
-<header class="header centered">
+<header class="header text-center">
     <div id="header" class="anchor">&nbsp;</div>
     <div class="container">
         <div class="row">

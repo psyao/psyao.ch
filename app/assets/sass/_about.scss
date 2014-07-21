@@ -1,21 +1,13 @@
-/*
- * About Section
- */
+//
+// About
+// --------------------------------------------------
 .about {
-  background: #2c3e50;
+  background: $brand-primary;
   color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
 
-  a {
-    color: #1abc9c;
-
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: #7b7b7b;
-    }
+  h3, .h3 {
+    color: #fff;
   }
-
 }
