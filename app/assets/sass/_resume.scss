@@ -5,6 +5,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  h3, .h3 {
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1) {
+      text-align: right;
+    }
+  }
+
   &-element {
     margin-bottom: 45px;
 
@@ -23,9 +29,5 @@
         margin-bottom: 30px;
       }
     }
-  }
-
-  .degree {
-    font-style: italic;
   }
 }

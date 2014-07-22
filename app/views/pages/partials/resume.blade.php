@@ -3,30 +3,30 @@
     <div class="container">
         <!-- Occupation -->
         <div class="row resume-element">
-            <div class="col-md-2 col-md-offset-1">
+            <div class="col-sm-3 col-lg-2 col-lg-offset-1">
                 <h3><span class="fa fa-building"></span> Expériences</h3>
             </div>
-            <div class="col-md-9 hr">
+            <div class="col-sm-9">
                 @unless($companies->count())
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <p class="item">Il n'y a aucune expérience!</p>
                     </div>
                 </div>
                 @else
                 @foreach($companies as $company)
                 <div class="row resume-element-item">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <h4>{{ $company->name }}, {{ $company->location }}</h4>
                     </div>
 
                     @unless($company->jobs->count())
-                    <div class="col-md-12 item">
+                    <div class="col-sm-12 item">
                         <p>Il n'y a aucun emploi!</p>
                     </div>
                     @else
                     @foreach($company->jobs as $job)
-                    <div class="col-md-8 item">
+                    <div class="col-sm-8 item">
                         <h5>{{ $job->title }}</h5>
 
                         @if( $job->description )
@@ -34,7 +34,7 @@
                         @endif
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <p>{{ $job->from->format('m.Y') }} -
                             @if( ! is_null($job->to))
                             {{ $job->to->format('m.Y') }}
@@ -55,30 +55,30 @@
         <!-- Eduction -->
         <div class="row resume-element">
             <div id="education" class="anchor">&nbsp;</div>
-            <div class="col-md-2 col-md-offset-1">
+            <div class="col-sm-3 col-lg-2 col-lg-offset-1">
                 <h3><span class="fa fa-university"></span> Formation</h3>
             </div>
-            <div class="col-md-9 hr">
+            <div class="col-sm-9">
                 @unless($institutes->count())
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <p class="item">Il n'y a aucun établissement!</p>
                     </div>
                 </div>
                 @else
                 @foreach($institutes as $institute)
                 <div class="row resume-element-item">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <h4>{{ $institute->name }}, {{ $institute->location }}</h4>
                     </div>
 
                     @unless($institute->courses->count())
-                    <div class="col-md-12 item">
+                    <div class="col-sm-12 item">
                         <p>Il n'y a aucune orientation!</p>
                     </div>
                     @else
                     @foreach($institute->courses as $course)
-                    <div class="col-md-8 item">
+                    <div class="col-sm-8 item">
                         <h5>{{ $course->title }}</h5>
 
                         <ul>
@@ -89,7 +89,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <p>{{ $course->from->format('m.Y') }} -
                             @if( ! is_null($job->to))
                             {{ $course->to->format('m.Y') }}

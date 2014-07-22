@@ -2,10 +2,10 @@
     <div id="about" class="anchor">&nbsp;</div>
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-md-offset-1">
+            <div class="col-sm-3 col-lg-2 col-lg-offset-1">
                 <h3 class="white"><span class="fa fa-user"></span> A propos</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <p>
                     Je suis un concepteur en multimédia, adorant autant le dévloppement frontend que
                     backend, avec une expérience de plus de dix ans en freelance, aussi à l'aise en PHP
@@ -20,7 +20,7 @@
                     Je suis actuellement en quête de nouveaux défis!
                 </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <p><a href="files/cv_steve_aguet.pdf"><span class="fa fa-file"></span> Télécharger le PDF</a></p>
             </div>
         </div>

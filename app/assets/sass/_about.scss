@@ -9,5 +9,9 @@
 
   h3, .h3 {
     color: #fff;
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1) {
+      text-align: right;
+    }
   }
 }
