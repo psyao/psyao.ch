@@ -5,7 +5,7 @@
         <div class="alert alert-{{ Session::get('flash_notification.level') }}">
             {{ Session::get('flash_notification.message') }}
 
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><span class="fa fa-times-circle"></span></button>
         </div>
     @endif
 @endif

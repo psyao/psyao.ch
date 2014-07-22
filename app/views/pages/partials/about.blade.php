@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-md-offset-1">
-                <h3 class="white"><i class="fa fa-user"></i> A propos</h3>
+                <h3 class="white"><span class="fa fa-user"></span> A propos</h3>
             </div>
             <div class="col-md-6">
                 <p>
@@ -21,7 +21,7 @@
                 </p>
             </div>
             <div class="col-md-3">
-                <p><a href="files/cv_steve_aguet.pdf"><i class="fa fa-file"></i> Télécharger le PDF</a></p>
+                <p><a href="files/cv_steve_aguet.pdf"><span class="fa fa-file"></span> Télécharger le PDF</a></p>
             </div>
         </div>
     </div>

@@ -2092,7 +2092,7 @@ tbody.collapse.in {
   .navbar-default .navbar-brand {
     color: #fff; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #e6e6e6;
+      color: #E74C3C;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #fff; }
@@ -2100,7 +2100,7 @@ tbody.collapse.in {
     color: #fff; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #fff;
-      background-color: transparent; }
+      background-color: #E74C3C; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
     background-color: #121212; }
@@ -2112,7 +2112,7 @@ tbody.collapse.in {
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
       background-color: #ddd; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #888; }
+      background-color: #fff; }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -2123,7 +2123,7 @@ tbody.collapse.in {
       color: #fff; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #fff;
-        background-color: transparent; }
+        background-color: #E74C3C; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #fff;
       background-color: #121212; }
@@ -2528,33 +2528,67 @@ h4, .h4 {
   .navbar-default .navbar-nav > li > a {
     border-bottom: 4px solid transparent;
     padding: 20px 17px 16px; }
-    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      border-bottom-color: #E74C3C; }
-    .navbar-default .navbar-nav > li > a > i {
+    .navbar-default .navbar-nav > li > a > span.fa {
       font-size: 24px; }
-  .navbar-default .navbar-nav > li > .active > a {
+  .navbar-default .navbar-nav > li.active > a {
+    border-bottom-color: #E74C3C; }
+  .navbar-default .navbar-nav > li.open > a {
+    background: #2c3e50;
+    border-bottom-color: transparent; }
+    .navbar-default .navbar-nav > li.open > a:focus {
+      background: #2c3e50; }
+  .navbar-default .navbar-nav > li.open.active > a {
+    background: #2c3e50;
     border-bottom-color: #E74C3C; }
   .navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #333333;
-    border: none;
+    border-top: none;
+    background: #2c3e50;
     -webkit-border-radius: 0;
-            border-radius: 0;
-    padding: 0; }
+            border-radius: 0; }
     .navbar-default .navbar-nav > li > .dropdown-menu a {
       color: #fff;
       padding: 8px 10px;
-      border-left: 4px solid transparent; }
+      border-right: 4px solid transparent; }
       .navbar-default .navbar-nav > li > .dropdown-menu a:hover, .navbar-default .navbar-nav > li > .dropdown-menu a:focus {
-        background-color: #222222;
-        border-left-color: #E74C3C; }
-      .navbar-default .navbar-nav > li > .dropdown-menu a > i {
+        background-color: #00bc8c; }
+      .navbar-default .navbar-nav > li > .dropdown-menu a > span.fa {
         padding-right: 20px; }
-    .navbar-default .navbar-nav > li > .dropdown-menu > .active > a, .navbar-default .navbar-nav > li > .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav > li > .dropdown-menu > .active > a:focus {
-      background-color: #222222;
-      border-left-color: #E74C3C; }
-    .navbar-default .navbar-nav > li > .dropdown-menu .divider {
-      background-color: transparent;
-      margin: 4px 0; }
+    .navbar-default .navbar-nav > li > .dropdown-menu > .active > a {
+      border-right-color: #00bc8c;
+      background-color: #202d3b; }
+  .navbar-default .navbar-nav.navbar-center {
+    display: inline-block;
+    float: none; }
+  .navbar-default .navbar-header {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .navbar-default .navbar-toggle {
+    border: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background: #00bc8c;
+    margin: 0;
+    padding: 25px 25px 26px; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #009b72; }
+  .navbar-default .navbar-collapse {
+    text-align: center;
+    margin-bottom: -4px; }
+    .navbar-default .navbar-collapse.in .navbar-nav > li > a, .navbar-default .navbar-collapse.collapsing .navbar-nav > li > a {
+      border-right: 10px solid transparent;
+      border-bottom: none;
+      padding: 20px 17px 20px 27px; }
+      .navbar-default .navbar-collapse.in .navbar-nav > li > a > span.fa, .navbar-default .navbar-collapse.collapsing .navbar-nav > li > a > span.fa {
+        font-size: 18px; }
+    .navbar-default .navbar-collapse.in .navbar-nav > li.active > a, .navbar-default .navbar-collapse.collapsing .navbar-nav > li.active > a {
+      border-right-color: #E74C3C; }
+    .navbar-default .navbar-collapse.in .navbar-nav > li > .dropdown-menu a, .navbar-default .navbar-collapse.collapsing .navbar-nav > li > .dropdown-menu a {
+      border-right-width: 10px; }
+      .navbar-default .navbar-collapse.in .navbar-nav > li > .dropdown-menu a:hover, .navbar-default .navbar-collapse.collapsing .navbar-nav > li > .dropdown-menu a:hover {
+        background: #00bc8c; }
+    .navbar-default .navbar-collapse.in .navbar-nav > li > .dropdown-menu > .active > a, .navbar-default .navbar-collapse.collapsing .navbar-nav > li > .dropdown-menu > .active > a {
+      background: #202d3b; }
+    .navbar-default .navbar-collapse.in .navbar-nav.navbar-center, .navbar-default .navbar-collapse.collapsing .navbar-nav.navbar-center {
+      display: block; }
 
 .navbar-fixed-top {
   border: none; }

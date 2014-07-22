@@ -1,19 +1,28 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            {{ link_to_route('home', 'psyao.ch', null, ['class' => 'navbar-brand']) }}
+        </div>
+        <div class="collapse navbar-collapse" id="topbar">
+            <ul class="nav navbar-nav navbar-center">
                 <li>
-                    <a href="#about" title="A propos"><i class="fa fa-user fa-fw"></i></a>
+                    <a href="#about" title="A propos"><span class="fa fa-user fa-fw"></span></a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Resume"><i class="fa fa-file fa-fw"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Curriculum vitae"><span class="fa fa-file fa-fw"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#resume"><i class="fa fa-building fa-fw"></i> Expériences</a></li>
-                        <li><a href="#education"><i class="fa fa-university fa-fw"></i> Formations</a></li>
+                        <li><a href="#resume"><span class="fa fa-building fa-fw"></span> Expériences</a></li>
+                        <li><a href="#education"><span class="fa fa-university fa-fw"></span> Formations</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#contact" title="Contact"><i class="fa fa-envelope fa-fw"></i></a>
+                    <a href="#contact" title="Contact"><span class="fa fa-envelope fa-fw"></span></a>
                 </li>
             </ul>
         </div>

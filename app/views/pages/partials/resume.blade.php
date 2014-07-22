@@ -4,7 +4,7 @@
         <!-- Occupation -->
         <div class="row resume-element">
             <div class="col-md-2 col-md-offset-1">
-                <h3><i class="fa fa-building"></i> Expériences</h3>
+                <h3><span class="fa fa-building"></span> Expériences</h3>
             </div>
             <div class="col-md-9 hr">
                 @unless($companies->count())
@@ -56,7 +56,7 @@
         <div class="row resume-element">
             <div id="education" class="anchor">&nbsp;</div>
             <div class="col-md-2 col-md-offset-1">
-                <h3><i class="fa fa-university"></i> Formation</h3>
+                <h3><span class="fa fa-university"></span> Formation</h3>
             </div>
             <div class="col-md-9 hr">
                 @unless($institutes->count())

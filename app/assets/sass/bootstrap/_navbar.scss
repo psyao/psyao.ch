@@ -11,57 +11,123 @@
         border-bottom: 4px solid transparent;
         padding: 20px 17px 16px;
 
-        &:hover,
-        &:focus {
-          border-bottom-color: $brand-danger;
-        }
-
-        & > i {
+        & > span.fa {
           font-size: 24px;
         }
       }
 
-      & > .active > a {
-        border-bottom-color: $brand-danger;
+      &.active > a {
+        border-bottom-color: $navbar-default-link-hover-bg;
+      }
+
+      &.open > a {
+        background: $brand-primary;
+        border-bottom-color: transparent;
+
+        &:focus {
+          background: $brand-primary;
+        }
+      }
+
+      &.open.active > a {
+        background: $brand-primary;
+        border-bottom-color: $navbar-default-link-hover-bg;
       }
 
       & > .dropdown-menu {
-        background-color: $gray-dark;
-        border: none;
+        border-top: none;
+        background: $brand-primary;
         border-radius: 0;
-        padding: 0;
 
         a {
-          color: #fff;
+          color: $navbar-default-color;
+
           padding: 8px 10px;
-          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
 
           &:hover,
           &:focus {
-            background-color: $gray-darker;
-            border-left-color: $brand-danger;
+            background-color: $brand-success;
           }
 
-          & > i {
+          & > span.fa {
             padding-right: 20px;
           }
         }
 
         & > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            background-color: $gray-darker;
-            border-left-color: $brand-danger;
+          border-right-color: $brand-success;
+          background-color: darken($brand-primary, 6.5%);
+        }
+      }
+    }
+
+    &.navbar-center {
+      display: inline-block;
+      float: none;
+    }
+
+  }
+
+  .navbar-header {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    background: $brand-success;
+    margin: 0;
+    padding: 25px 25px 26px;
+
+    &:hover,
+    &:focus {
+      background-color: darken($brand-success, 6.5%)
+    }
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    margin-bottom: -4px;
+
+    &.in,
+    &.collapsing {
+      .navbar-nav {
+        & > li {
+
+          & > a {
+            border-right: 10px solid transparent;
+            border-bottom: none;
+            padding: 20px 17px 20px 27px;
+
+            & > span.fa {
+              font-size: 18px;
+            }
+          }
+
+          &.active > a {
+            border-right-color: $navbar-default-link-hover-bg;
+          }
+
+          & > .dropdown-menu {
+            a {
+              border-right-width: 10px;
+
+              &:hover {
+                background: $brand-success;
+              }
+            }
+
+            & > .active > a {
+              background: darken($brand-primary, 6.5%);
+            }
           }
         }
 
-        .divider {
-          background-color: transparent;
-          margin: 4px 0;
+        &.navbar-center {
+          display: block;
         }
       }
-
 
     }
   }
