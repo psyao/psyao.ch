@@ -7,7 +7,7 @@
             </div>
             <div class="col-sm-6">
                 <p>
-                    Je suis un concepteur en multimédia, adorant autant le dévloppement frontend que
+                    Je suis un concepteur en multimédia, adorant autant le développement frontend que
                     backend, avec une expérience de plus de dix ans en freelance, aussi à l'aise en PHP
                     qu'en HTML.
                 </p>
@@ -20,9 +20,9 @@
                     Je suis actuellement en quête de nouveaux défis!
                 </p>
             </div>
-            <div class="col-sm-3">
-                <p><a href="files/cv_steve_aguet.pdf"><span class="fa fa-file"></span> Télécharger le PDF</a></p>
-            </div>
+<!--            <div class="col-sm-3">-->
+<!--                <button type="button" class="btn btn-success btn-sm" onclick="window.print()">Imprimer le curriculum vitae</button>-->
+<!--            </div>-->
         </div>
     </div>
 </section>

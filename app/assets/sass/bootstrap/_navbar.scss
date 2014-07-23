@@ -10,6 +10,7 @@
       & > a {
         border-bottom: 4px solid transparent;
         padding: 20px 17px 16px;
+        transition: background-color 300ms ease-in, border 300ms ease-in;
 
         & > span.fa {
           font-size: 24px;
@@ -44,10 +45,13 @@
 
           padding: 8px 10px;
           border-right: 4px solid transparent;
+          transition: background-color 300ms ease-in, border 300ms ease-in;
 
           &:hover,
           &:focus {
             background-color: $brand-success;
+            padding-left: 20px;
+            transition: padding-left 300ms ease-in-out;
           }
 
           & > span.fa {
@@ -71,6 +75,14 @@
 
   .navbar-header {
     font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    a {
+      &:hover,
+      &:focus {
+        color: #fff;
+        background: $brand-danger;
+        transition: all 300ms ease-in;
+      }
+    }
   }
 
   .navbar-toggle {
