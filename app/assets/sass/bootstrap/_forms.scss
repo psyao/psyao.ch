@@ -3,6 +3,7 @@
 // --------------------------------------------------
 .form-control {
   border: none;
+  border-radius: 0;
   box-shadow: none;
 
   &:focus {
@@ -30,11 +31,8 @@
     font-size: $font-size-small;
     padding: $padding-small-vertical $padding-small-horizontal;
     //    font-weight: 400;
-    border-bottom-left-radius: $input-border-radius;
-    border-bottom-right-radius: $input-border-radius;
   }
 }
-
 //.btn {
 //  &,
 //  &:focus,
