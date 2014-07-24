@@ -2,12 +2,12 @@
 // Header
 // --------------------------------------------------
 .header {
+  background: $gray-dark url(../img/header-bg.jpg) no-repeat center center;
+  background-size: cover;
   padding-top: 190px;
   padding-bottom: 190px;
   text-align: center;
-  background: $gray-dark url(../img/header-bg.jpg) no-repeat center center;
   width: 100%;
-  background-size: cover;
 
   h1 {
     font-size: 80px;

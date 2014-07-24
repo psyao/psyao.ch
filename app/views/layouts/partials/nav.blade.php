@@ -17,8 +17,8 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Curriculum vitae"><span class="fa fa-file fa-fw"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#resume"><span class="fa fa-building fa-fw"></span> Expériences</a></li>
-                        <li><a href="#education"><span class="fa fa-university fa-fw"></span> Formations</a></li>
+                        <li><a href="#resume">Expériences</a></li>
+                        <li><a href="#education">Formations</a></li>
                     </ul>
                 </li>
                 <li>
