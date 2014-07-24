@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>psyao.ch : Curriculum  vitae en ligne de Steve Aguet</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:300,400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,300italic,700|Raleway:300,700">
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body data-spy="scroll" data-target=".navbar-default">

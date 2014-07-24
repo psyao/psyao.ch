@@ -1,17 +1,122 @@
 {
     "event": "suiteStart",
-    "suite": "functional",
-    "tests": 1
+    "suite": "integration",
+    "tests": 8
 }{
     "event": "testStart",
-    "suite": "functional",
-    "test": "send a message (PostMessageCept)"
+    "suite": "integration",
+    "test": "CompanyRepositoryTest::it_saves_a_company"
 }{
     "event": "test",
-    "suite": "functional",
-    "test": "send a message (PostMessageCept)",
+    "suite": "integration",
+    "test": "CompanyRepositoryTest::it_saves_a_company",
     "status": "pass",
-    "time": 2.652624130249,
+    "time": 0.67430806159973,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "CompanyRepositoryTest::it_gets_all_companies"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "CompanyRepositoryTest::it_gets_all_companies",
+    "status": "pass",
+    "time": 0.20802187919617,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "CompanyRepositoryTest::it_gets_a_company_by_its_name"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "CompanyRepositoryTest::it_gets_a_company_by_its_name",
+    "status": "pass",
+    "time": 0.11022686958313,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "CourseRepositoryTest::it_saves_a_course_for_an_institute"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "CourseRepositoryTest::it_saves_a_course_for_an_institute",
+    "status": "pass",
+    "time": 0.11276483535767,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "InstituteRepositoryTest::it_saves_a_institute"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "InstituteRepositoryTest::it_saves_a_institute",
+    "status": "pass",
+    "time": 0.082587957382202,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "InstituteRepositoryTest::it_gets_all_institutes"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "InstituteRepositoryTest::it_gets_all_institutes",
+    "status": "pass",
+    "time": 0.1781051158905,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "InstituteRepositoryTest::it_gets_a_institute_by_its_name"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "InstituteRepositoryTest::it_gets_a_institute_by_its_name",
+    "status": "pass",
+    "time": 0.075610876083374,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "JobRepositoryTest::it_saves_a_job_for_a_company"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "JobRepositoryTest::it_saves_a_job_for_a_company",
+    "status": "pass",
+    "time": 0.10461807250977,
     "trace": [
 
     ],

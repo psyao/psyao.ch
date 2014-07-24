@@ -10,19 +10,6 @@ use Carbon\Carbon;
 class CompanyRepository
 {
     /**
-     * @var Company
-     */
-    protected $company;
-
-    /**
-     * @param Company $company
-     */
-    function __construct(Company $company)
-    {
-        $this->company = $company;
-    }
-
-    /**
      * Get
      *
      * @param string $name
@@ -31,8 +18,7 @@ class CompanyRepository
      */
     public function getByName($name)
     {
-        return $this->company
-            ->whereName($name)
+        return Company::whereName($name)
             ->first();
     }
 
@@ -43,8 +29,7 @@ class CompanyRepository
      */
     public function getAll()
     {
-        return $this->company
-            ->where('from', '<=', Carbon::now())
+        return Company::where('from', '<=', Carbon::now())
             ->with('jobs')
             ->orderBy('featured', 'desc')
             ->orderBy('from', 'desc')

@@ -10,19 +10,6 @@ use Carbon\Carbon;
 class InstituteRepository
 {
     /**
-     * @var Institute
-     */
-    protected $institute;
-
-    /**
-     * @param Institute $institute
-     */
-    function __construct(Institute $institute)
-    {
-        $this->institute = $institute;
-    }
-
-    /**
      * Get
      *
      * @param string $name
@@ -31,8 +18,7 @@ class InstituteRepository
      */
     public function getByName($name)
     {
-        return $this->institute
-            ->whereName($name)
+        return Institute::whereName($name)
             ->first();
     }
 
@@ -43,8 +29,7 @@ class InstituteRepository
      */
     public function getAll()
     {
-        return $this->institute
-            ->where('from', '<=', Carbon::now())
+        return Institute::where('from', '<=', Carbon::now())
             ->with('courses')
             ->orderBy('from', 'desc')
             ->get();

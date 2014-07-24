@@ -1,0 +1,36 @@
+Psyao\Resume\Company:
+  name: $string
+  location: $string
+  featured: $boolean
+  from: $date
+  to: $date
+  created_at: $date
+  updated_at: $date
+
+Psyao\Resume\Job:
+  company_id:
+      type: Psyao\Resume\Company
+  title: $string
+  from: $date
+  to: $date
+  description: $string
+  created_at: $date
+  updated_at: $date
+
+Psyao\Resume\Institute:
+  name: $string
+  from: $date
+  to: $date
+  created_at: $date
+  updated_at: $date
+
+Psyao\Resume\Course:
+  institute_id:
+      type: Psyao\Resume\Institute
+  title: $string
+  title: $domain
+  from: $date
+  to: $date
+  diploma: $string
+  created_at: $date
+  updated_at: $date

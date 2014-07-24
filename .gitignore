@@ -8,4 +8,4 @@ composer.lock
 Thumbs.db
 _ide_helper*
 
-tests/_output/*
+app/tests/_output/*

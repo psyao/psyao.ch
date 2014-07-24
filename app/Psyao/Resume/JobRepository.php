@@ -8,16 +8,6 @@
 class JobRepository
 {
     /**
-     * @var Company
-     */
-    protected $company;
-
-    function __construct(Company $company)
-    {
-        $this->company = $company;
-    }
-
-    /**
      * Persist a new job.
      *
      * @param Job     $job
@@ -27,7 +17,7 @@ class JobRepository
      */
     public function save(Job $job, $companyId)
     {
-        return $this->company->findOrFail($companyId)
+        return Company::findOrFail($companyId)
             ->jobs()
             ->save($job);
     }

@@ -8,16 +8,6 @@
 class CourseRepository
 {
     /**
-     * @var Institute
-     */
-    protected $institute;
-
-    function __construct(Institute $institute)
-    {
-        $this->institute = $institute;
-    }
-
-    /**
      * Persist a new course.
      *
      * @param Course  $course
@@ -27,7 +17,7 @@ class CourseRepository
      */
     public function save(Course $course, $instituteId)
     {
-        return $this->institute->findOrFail($instituteId)
+        return Institute::findOrFail($instituteId)
             ->courses()
             ->save($course);
     }
