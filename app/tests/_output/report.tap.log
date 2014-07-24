@@ -1,10 +1,10 @@
 TAP version 13
-ok 1 - CompanyRepositoryTest::it_saves_a_company
-ok 2 - CompanyRepositoryTest::it_gets_all_companies
-ok 3 - CompanyRepositoryTest::it_gets_a_company_by_its_name
-ok 4 - CourseRepositoryTest::it_saves_a_course_for_an_institute
-ok 5 - InstituteRepositoryTest::it_saves_a_institute
-ok 6 - InstituteRepositoryTest::it_gets_all_institutes
-ok 7 - InstituteRepositoryTest::it_gets_a_institute_by_its_name
+ok 1 - CourseRepositoryTest::it_saves_a_course_for_an_institute
+ok 2 - InstituteRepositoryTest::it_saves_a_institute
+ok 3 - InstituteRepositoryTest::it_gets_all_institutes
+ok 4 - InstituteRepositoryTest::it_gets_a_institute_by_its_name
+ok 5 - CompanyRepositoryTest::it_saves_a_company
+ok 6 - CompanyRepositoryTest::it_gets_all_companies
+ok 7 - CompanyRepositoryTest::it_gets_a_company_by_its_name
 ok 8 - JobRepositoryTest::it_saves_a_job_for_a_company
 1..8

@@ -1,7 +1,7 @@
 <?php
 
 use Laracasts\TestDummy\Factory as TestDummy;
-use Psyao\Resume\CompanyRepository;
+use Psyao\Resume\Occupations\CompanyRepository;
 
 class CompanyRepositoryTest extends \Codeception\TestCase\Test
 {
@@ -25,7 +25,7 @@ class CompanyRepositoryTest extends \Codeception\TestCase\Test
     {
         // Given
         $company = TestDummy::build(
-            'Psyao\Resume\Company',
+            'Psyao\Resume\Occupations\Company',
             [
                 'name'     => 'Foobar',
                 'featured' => true
@@ -49,7 +49,7 @@ class CompanyRepositoryTest extends \Codeception\TestCase\Test
     public function it_gets_all_companies()
     {
         // Given
-        TestDummy::times(5)->create('Psyao\Resume\Company');
+        TestDummy::times(5)->create('Psyao\Resume\Occupations\Company');
 
         // When
         $results = $this->repo->getAll();
@@ -62,10 +62,10 @@ class CompanyRepositoryTest extends \Codeception\TestCase\Test
     public function it_gets_a_company_by_its_name()
     {
         // Given
-        TestDummy::create('Psyao\Resume\Company', ['name' => 'Foobar']);
+        TestDummy::create('Psyao\Resume\Occupations\Company', ['name' => 'Foobar']);
 
         // When
-        /** @var Psyao\Resume\Company $company */
+        /** @var Psyao\Resume\Occupations\Company $company */
         $company = $this->repo->getByName('Foobar');
 
         // Then

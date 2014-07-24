@@ -1,7 +1,7 @@
 <?php
 
-use Psyao\Resume\CompanyRepository;
-use Psyao\Resume\InstituteRepository;
+use Psyao\Resume\Occupations\CompanyRepository;
+use Psyao\Resume\Educations\InstituteRepository;
 
 class PagesController extends BaseController
 {

@@ -1,4 +1,4 @@
-<?php namespace Psyao\Resume;
+<?php namespace Psyao\Resume\Occupations;
 
 use Eloquent;
 
@@ -16,7 +16,7 @@ class Company extends Eloquent
      */
     public function jobs()
     {
-        return $this->hasMany('Psyao\Resume\Job')->orderby('from', 'desc');
+        return $this->hasMany('Psyao\Resume\Occupations\Job')->orderby('from', 'desc');
     }
 
     /**

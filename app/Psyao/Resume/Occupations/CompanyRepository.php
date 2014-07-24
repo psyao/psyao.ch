@@ -1,13 +1,13 @@
-<?php namespace Psyao\Resume;
+<?php namespace Psyao\Resume\Occupations;
 
 use Carbon\Carbon;
 
 /**
- * Class InstituteRepository
+ * Class CompanyRepository
  *
- * @package Psyao\Eductions
+ * @package Psyao\Resume
  */
-class InstituteRepository
+class CompanyRepository
 {
     /**
      * Get
@@ -18,32 +18,33 @@ class InstituteRepository
      */
     public function getByName($name)
     {
-        return Institute::whereName($name)
+        return Company::whereName($name)
             ->first();
     }
 
     /**
-     * Get all the institutes.
+     * Get all the companies.
      *
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public function getAll()
     {
-        return Institute::where('from', '<=', Carbon::now())
-            ->with('courses')
+        return Company::where('from', '<=', Carbon::now())
+            ->with('jobs')
+            ->orderBy('featured', 'desc')
             ->orderBy('from', 'desc')
             ->get();
     }
 
     /**
-     * Persist a new institute.
+     * Persist a new company.
      *
-     * @param Institute $institute
+     * @param Company $company
      *
      * @return mixed
      */
-    public function save(Institute $institute)
+    public function save(Company $company)
     {
-        return $institute->save();
+        return $company->save();
     }
 } 

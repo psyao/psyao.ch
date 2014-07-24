@@ -1,4 +1,4 @@
-Psyao\Resume\Company:
+Psyao\Resume\Occupations\Company:
   name: $string
   location: $string
   featured: $boolean
@@ -7,9 +7,9 @@ Psyao\Resume\Company:
   created_at: $date
   updated_at: $date
 
-Psyao\Resume\Job:
+Psyao\Resume\Occupations\Job:
   company_id:
-      type: Psyao\Resume\Company
+      type: Psyao\Resume\Occupations\Company
   title: $string
   from: $date
   to: $date
@@ -17,16 +17,16 @@ Psyao\Resume\Job:
   created_at: $date
   updated_at: $date
 
-Psyao\Resume\Institute:
+Psyao\Resume\Educations\Institute:
   name: $string
   from: $date
   to: $date
   created_at: $date
   updated_at: $date
 
-Psyao\Resume\Course:
+Psyao\Resume\Educations\Course:
   institute_id:
-      type: Psyao\Resume\Institute
+      type: Psyao\Resume\Educations\Institute
   title: $string
   title: $domain
   from: $date

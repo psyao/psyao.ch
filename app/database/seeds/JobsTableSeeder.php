@@ -1,9 +1,9 @@
 <?php
 
-use Psyao\Resume\Company;
-use Psyao\Resume\CompanyRepository;
-use Psyao\Resume\Job;
-use Psyao\Resume\JobRepository;
+use Psyao\Resume\Occupations\Company;
+use Psyao\Resume\Occupations\CompanyRepository;
+use Psyao\Resume\Occupations\Job;
+use Psyao\Resume\Occupations\JobRepository;
 
 class JobsTableSeeder extends Seeder
 {

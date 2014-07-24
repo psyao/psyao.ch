@@ -1,7 +1,7 @@
 <?php
 
-use Psyao\Resume\Institute;
-use Psyao\Resume\InstituteRepository;
+use Psyao\Resume\Educations\Institute;
+use Psyao\Resume\Educations\InstituteRepository;
 
 class InstitutesTableSeeder extends Seeder
 {

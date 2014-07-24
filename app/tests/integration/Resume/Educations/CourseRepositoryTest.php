@@ -1,7 +1,7 @@
 <?php
 
 use Laracasts\TestDummy\Factory as TestDummy;
-use Psyao\Resume\CourseRepository;
+use Psyao\Resume\Educations\CourseRepository;
 
 class CourseRepositoryTest extends \Codeception\TestCase\Test
 {
@@ -25,14 +25,14 @@ class CourseRepositoryTest extends \Codeception\TestCase\Test
     {
         // Given
         $course = TestDummy::build(
-            'Psyao\Resume\Course',
+            'Psyao\Resume\Educations\Course',
             [
                 'institute_id' => null,
                 'title'      => 'Foobar'
             ]
         );
 
-        $institute = TestDummy::create('Psyao\Resume\Institute');
+        $institute = TestDummy::create('Psyao\Resume\Educations\Institute');
 
         // When
         $this->repo->save($course, $institute->id);

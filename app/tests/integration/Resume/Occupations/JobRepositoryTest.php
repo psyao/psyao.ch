@@ -1,7 +1,7 @@
 <?php
 
 use Laracasts\TestDummy\Factory as TestDummy;
-use Psyao\Resume\JobRepository;
+use Psyao\Resume\Occupations\JobRepository;
 
 class JobRepositoryTest extends \Codeception\TestCase\Test
 {
@@ -25,14 +25,14 @@ class JobRepositoryTest extends \Codeception\TestCase\Test
     {
         // Given
         $job = TestDummy::build(
-            'Psyao\Resume\Job',
+            'Psyao\Resume\Occupations\Job',
             [
                 'company_id' => null,
                 'title'      => 'Foobar'
             ]
         );
 
-        $company = TestDummy::create('Psyao\Resume\Company');
+        $company = TestDummy::create('Psyao\Resume\Occupations\Company');
 
         // When
         $this->repo->save($job, $company->id);

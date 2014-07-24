@@ -1,4 +1,4 @@
-<?php namespace Psyao\Resume;
+<?php namespace Psyao\Resume\Educations;
 
 /**
  * Class CourseRepository

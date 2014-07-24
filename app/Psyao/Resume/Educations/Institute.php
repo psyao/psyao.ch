@@ -1,4 +1,4 @@
-<?php namespace Psyao\Resume;
+<?php namespace Psyao\Resume\Educations;
 
 use Eloquent;
 
@@ -16,7 +16,7 @@ class Institute extends Eloquent
      */
     public function courses()
     {
-        return $this->hasMany('Psyao\Resume\Course')->orderby('from', 'desc');
+        return $this->hasMany('Psyao\Resume\Educations\Course')->orderby('from', 'desc');
     }
 
     /**

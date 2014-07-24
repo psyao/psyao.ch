@@ -1,7 +1,7 @@
 <?php
 
-use Psyao\Resume\Company;
-use Psyao\Resume\CompanyRepository;
+use Psyao\Resume\Occupations\Company;
+use Psyao\Resume\Occupations\CompanyRepository;
 
 class CompaniesTableSeeder extends Seeder
 {

@@ -1,4 +1,4 @@
-<?php namespace Psyao\Resume;
+<?php namespace Psyao\Resume\Occupations;
 
 use Carbon\Carbon;
 use Eloquent;
@@ -24,7 +24,7 @@ class Job extends Eloquent
      */
     public function company()
     {
-        return $this->belongsTo('Psyao\Resume\Company');
+        return $this->belongsTo('Psyao\Resume\Occupations\Company');
     }
 
     /**

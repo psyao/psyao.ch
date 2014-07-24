@@ -1,9 +1,9 @@
 <?php
 
-use Psyao\Resume\Course;
-use Psyao\Resume\CourseRepository;
-use Psyao\Resume\Institute;
-use Psyao\Resume\InstituteRepository;
+use Psyao\Resume\Educations\Course;
+use Psyao\Resume\Educations\CourseRepository;
+use Psyao\Resume\Educations\Institute;
+use Psyao\Resume\Educations\InstituteRepository;
 
 class CoursesTableSeeder extends Seeder
 {

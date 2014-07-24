@@ -1,4 +1,4 @@
-<?php namespace Psyao\Resume;
+<?php namespace Psyao\Resume\Educations;
 
 use Carbon\Carbon;
 use Eloquent;
@@ -24,7 +24,7 @@ class Course extends Eloquent
      */
     public function institute()
     {
-        return $this->belongsTo('Psyao\Resume\Institute');
+        return $this->belongsTo('Psyao\Resume\Educations\Institute');
     }
 
     /**
