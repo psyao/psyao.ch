@@ -4,5 +4,20 @@
 .alert {
   margin-bottom: 0;
   text-align: center;
-  font-weight: 400;
+
+  &.alert-info a {
+    color: darken($brand-info, 19.5%);
+  }
+
+  &.alert-success a {
+    color: darken($brand-success, 19.5%);
+  }
+
+  &.alert-warning a {
+    color: darken($brand-warning, 19.5%);
+  }
+
+  &.alert-danger a {
+    color: darken($brand-danger, 19.5%);
+  }
 }

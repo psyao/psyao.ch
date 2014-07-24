@@ -18,11 +18,11 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 46.7%) !default; // #777
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
-$brand-primary:         #2c3e50;
-$brand-success:         #00bc8c;
-$brand-info:            #3498DB;
-$brand-warning:         #F39C12;
-$brand-danger:          #E74C3C;
+$brand-primary:         #34475E;
+$brand-success:         #37B06D;
+$brand-info:            #EFC332;
+$brand-warning:         #D96E32;
+$brand-danger:          #DF432F;
 
 
 //== Scaffolding
@@ -345,13 +345,13 @@ $container-lg:                 $container-large-desktop !default;
 // Basics of a navbar
 $navbar-height:                    65px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
-$navbar-border-radius:             $border-radius-base !default;
+$navbar-border-radius:             0 !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #fff !default;
-$navbar-default-bg:                $gray-darker !default;
+$navbar-default-bg:                $brand-primary !default;
 $navbar-default-border:            transparent !default;
 
 // Navbar links
@@ -359,7 +359,7 @@ $navbar-default-link-color:                #fff !default;
 $navbar-default-link-hover-color:          $navbar-default-link-color !default;
 $navbar-default-link-hover-bg:             $brand-danger !default;
 $navbar-default-link-active-color:         $navbar-default-link-color !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-bg:            $navbar-default-link-hover-bg !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 

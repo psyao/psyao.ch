@@ -2,7 +2,8 @@
 // About
 // --------------------------------------------------
 .about {
-  background: $brand-primary;
+  background: lighten($brand-primary, 4%);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.175);
   color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;

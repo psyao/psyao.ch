@@ -7,9 +7,9 @@
   box-shadow: none;
 
   &:focus {
+    background-color: $gray-lighter;
     border: none;
     box-shadow: none;
-    background-color: $gray-lighter;
   }
 }
 
@@ -27,21 +27,8 @@
 
   .help-block {
     background-color: $brand-danger;
-    margin-top: 0;
     font-size: $font-size-small;
-    padding: $padding-small-vertical $padding-small-horizontal;
-    //    font-weight: 400;
-    border-bottom-left-radius: $input-border-radius;
-    border-bottom-right-radius: $input-border-radius;
+    margin-top: 0;
+    padding: 0 $padding-small-horizontal;
   }
 }
-
-//.btn {
-//  &,
-//  &:focus,
-//  &:active {
-//    border: none;
-//    box-shadow: none;
-//    outline: 0;
-//  }
-//}
