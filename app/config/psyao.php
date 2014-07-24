@@ -197,6 +197,44 @@ return [
                 ]
             ]
         ],
+    ],
+    'skills'     => [
+        [
+            'name'  => 'PHP5',
+            'level' => 60,
+        ],
+        [
+            'name'  => 'HTML/CSS',
+            'level' => 70,
+        ],
+        [
+            'name'  => 'Javascript',
+            'level' => 50,
+        ],
+        [
+            'name'  => 'Architecture MVC',
+            'level' => 60,
+        ],
+        [
+            'name'  => 'Framework Laravel',
+            'level' => 40,
+        ],
+        [
+            'name'  => 'MySQL',
+            'level' => 60,
+        ],
+        [
+            'name'  => 'Photoshop',
+            'level' => 50,
+        ],
+        [
+            'name'  => 'Illustrator',
+            'level' => 50,
+        ],
+        [
+            'name'  => 'Dreamweaver',
+            'level' => 50,
+        ],
     ]
 
 ];

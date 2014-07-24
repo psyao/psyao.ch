@@ -3,5 +3,6 @@
     <div class="container">
         @include('pages.partials.occupation')
         @include('pages.partials.education')
+        @include('pages.partials.skills')
     </div>
 </section>

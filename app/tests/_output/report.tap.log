@@ -7,4 +7,6 @@ ok 5 - CompanyRepositoryTest::it_saves_a_company
 ok 6 - CompanyRepositoryTest::it_gets_all_companies
 ok 7 - CompanyRepositoryTest::it_gets_a_company_by_its_name
 ok 8 - JobRepositoryTest::it_saves_a_job_for_a_company
-1..8
+ok 9 - SkillRepositoryTest::it_saves_a_skill
+ok 10 - SkillRepositoryTest::it_gets_all_skills
+1..10

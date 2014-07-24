@@ -34,3 +34,9 @@ Psyao\Resume\Educations\Course:
   diploma: $string
   created_at: $date
   updated_at: $date
+
+Psyao\Resume\Skills\Skill:
+  name: $string
+  level: $integer
+  created_at: $date
+  updated_at: $date

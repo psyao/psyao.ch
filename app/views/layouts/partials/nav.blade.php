@@ -19,6 +19,7 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#resume">Expériences</a></li>
                         <li><a href="#education">Formations</a></li>
+                        <li><a href="#skills">Compétences</a></li>
                     </ul>
                 </li>
                 <li>

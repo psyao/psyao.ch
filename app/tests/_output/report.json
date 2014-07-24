@@ -1,7 +1,7 @@
 {
     "event": "suiteStart",
     "suite": "integration",
-    "tests": 8
+    "tests": 10
 }{
     "event": "testStart",
     "suite": "integration",
@@ -11,7 +11,7 @@
     "suite": "integration",
     "test": "CourseRepositoryTest::it_saves_a_course_for_an_institute",
     "status": "pass",
-    "time": 0.75584506988525,
+    "time": 0.74395394325256,
     "trace": [
 
     ],
@@ -26,7 +26,7 @@
     "suite": "integration",
     "test": "InstituteRepositoryTest::it_saves_a_institute",
     "status": "pass",
-    "time": 0.090291023254395,
+    "time": 0.083691835403442,
     "trace": [
 
     ],
@@ -41,7 +41,7 @@
     "suite": "integration",
     "test": "InstituteRepositoryTest::it_gets_all_institutes",
     "status": "pass",
-    "time": 0.21240901947021,
+    "time": 0.20072388648987,
     "trace": [
 
     ],
@@ -56,7 +56,7 @@
     "suite": "integration",
     "test": "InstituteRepositoryTest::it_gets_a_institute_by_its_name",
     "status": "pass",
-    "time": 0.11328196525574,
+    "time": 0.11595797538757,
     "trace": [
 
     ],
@@ -71,7 +71,7 @@
     "suite": "integration",
     "test": "CompanyRepositoryTest::it_saves_a_company",
     "status": "pass",
-    "time": 0.085713148117065,
+    "time": 0.090985059738159,
     "trace": [
 
     ],
@@ -86,7 +86,7 @@
     "suite": "integration",
     "test": "CompanyRepositoryTest::it_gets_all_companies",
     "status": "pass",
-    "time": 0.1856210231781,
+    "time": 0.19545292854309,
     "trace": [
 
     ],
@@ -101,7 +101,7 @@
     "suite": "integration",
     "test": "CompanyRepositoryTest::it_gets_a_company_by_its_name",
     "status": "pass",
-    "time": 0.07808518409729,
+    "time": 0.078220844268799,
     "trace": [
 
     ],
@@ -116,7 +116,37 @@
     "suite": "integration",
     "test": "JobRepositoryTest::it_saves_a_job_for_a_company",
     "status": "pass",
-    "time": 0.10814595222473,
+    "time": 0.10298609733582,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "SkillRepositoryTest::it_saves_a_skill"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "SkillRepositoryTest::it_saves_a_skill",
+    "status": "pass",
+    "time": 0.082458019256592,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "integration",
+    "test": "SkillRepositoryTest::it_gets_all_skills"
+}{
+    "event": "test",
+    "suite": "integration",
+    "test": "SkillRepositoryTest::it_gets_all_skills",
+    "status": "pass",
+    "time": 0.16866993904114,
     "trace": [
 
     ],
