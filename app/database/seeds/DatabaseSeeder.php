@@ -10,7 +10,8 @@ class DatabaseSeeder extends Seeder
         'jobs',
         'institutes',
         'courses',
-        'skills'
+        'skills',
+        'languages'
     ];
 
     /**
@@ -21,7 +22,8 @@ class DatabaseSeeder extends Seeder
         'JobsTableSeeder',
         'InstitutesTableSeeder',
         'CoursesTableSeeder',
-        'SkillsTableSeeder'
+        'SkillsTableSeeder',
+        'LanguagesTableSeeder'
     ];
 
     /**

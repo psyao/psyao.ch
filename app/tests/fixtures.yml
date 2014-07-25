@@ -40,3 +40,12 @@ Psyao\Resume\Skills\Skill:
   level: $integer
   created_at: $date
   updated_at: $date
+
+Psyao\Resume\Languages\Language:
+  name: $string
+  mother_tongue: $boolean
+  understanding: $integer
+  speaking: $integer
+  writing: $integer
+  created_at: $date
+  updated_at: $date

@@ -235,6 +235,28 @@ return [
             'name'  => 'Dreamweaver',
             'level' => 50,
         ],
+    ],
+    'languages' => [
+        [
+            'name'          => "Français",
+            'mother_tongue' => true,
+            'understanding' => 100,
+            'speaking'      => 100,
+            'writing'       => 100
+        ],
+        [
+            'name'          => "Anglais",
+            'mother_tongue' => false,
+            'understanding' => 90,
+            'speaking'      => 60,
+            'writing'       => 70
+        ],
+        [
+            'name'          => "Allemand",
+            'mother_tongue' => false,
+            'understanding' => 50,
+            'speaking'      => 40,
+            'writing'       => 40
+        ],
     ]
-
 ];
