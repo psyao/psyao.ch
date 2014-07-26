@@ -1,13 +1,10 @@
 <?php
 
 use Psyao\Contact\PostMessageCommand;
-use Psyao\Core\CommandBus;
 use Psyao\Forms\ContactForm;
 
 class ContactController extends BaseController
 {
-    use CommandBus;
-
     /**
      * @var ContactForm
      */
@@ -27,18 +24,15 @@ class ContactController extends BaseController
     {
         $this->contactForm->validate($input = Input::only(['name', 'email', 'subject', 'body']));
 
-        extract($input);
-
-        $command = new PostMessageCommand($name, $email, $subject, $body);
-
-        if ( ! $this->execute($command))
+        if (!$this->execute(PostMessageCommand::class, $input))
         {
             Flash::error("Votre message n'a pa pu être envoyé!");
+
+            Redirect::back()->withInput();
         }
 
         Flash::success('Votre message a été envoyé!');
 
         return Redirect::home();
     }
-
 }

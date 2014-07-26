@@ -27,6 +27,6 @@ class PostMessageCommandHandler implements CommandHandler
             }
         );
 
-        return ! count(Mail::failures());
+        return !count(Mail::failures());
     }
 }
