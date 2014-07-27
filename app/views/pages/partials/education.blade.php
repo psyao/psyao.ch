@@ -18,34 +18,32 @@
                 <h4>{{ $institute->name }}, {{ $institute->location }}</h4>
             </div>
 
-            @unless($institute->courses->count())
-            <div class="col-sm-12 item">
-                <p>Il n'y a aucune orientation!</p>
-            </div>
-            @else
-            @foreach($institute->courses as $course)
-            <div class="col-sm-8 item">
-                <h5>{{ $course->title }}</h5>
+            @forelse($institute->courses as $course)
+                <div class="col-sm-8 item">
+                    <h5>{{ $course->title }}</h5>
 
-                <ul>
-                    <li>{{ $course->domain }}</li>
-                    @if( $course->diploma )
-                    <li><em>{{ $course->diploma }}</em></li>
-                    @endif
-                </ul>
-            </div>
+                    <ul>
+                        <li>{{ $course->domain }}</li>
+                        @if( $course->diploma )
+                        <li><em>{{ $course->diploma }}</em></li>
+                        @endif
+                    </ul>
+                </div>
 
-            <div class="col-sm-4">
-                <p>{{ $course->from->format('m.Y') }} -
-                    @if( ! is_null($course->to))
-                    {{ $course->to->format('m.Y') }}
-                    @else
-                    A ce jour
-                    @endif
-                </p>
-            </div>
-            @endforeach
-            @endunless
+                <div class="col-sm-4">
+                    <p>{{ $course->from->format('m.Y') }} -
+                        @if( ! is_null($course->to))
+                        {{ $course->to->format('m.Y') }}
+                        @else
+                        A ce jour
+                        @endif
+                    </p>
+                </div>
+            @empty
+                <div class="col-sm-12 item">
+                    <p>Il n'y a aucune orientation!</p>
+                </div>
+            @endforelse
         </div>
         @endforeach
         @endunless
