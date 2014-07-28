@@ -1,19 +1,11 @@
 <?php
 
-use Psyao\Resume\Skills\Skill;
-use Psyao\Resume\Skills\SkillRepository;
+use Laracasts\Commander\CommanderTrait;
+use Psyao\Resume\Skills\AddSkillCommand;
 
 class SkillsTableSeeder extends Seeder
 {
-    /**
-     * @var SkillRepository
-     */
-    protected $skillRepository;
-
-    function __construct(SkillRepository $skillRepository)
-    {
-        $this->skillRepository = $skillRepository;
-    }
+    use CommanderTrait;
 
     public function run()
     {
@@ -23,21 +15,8 @@ class SkillsTableSeeder extends Seeder
 
         foreach ($skills as $skill)
         {
-            $this->saveSkill($skill);
+            $this->execute(AddSkillCommand::class, $skill);
         }
-    }
-
-    /**
-     * @param array $skill
-     */
-    private function saveSkill(array $skill)
-    {
-        $this->skillRepository->save(
-            Skill::learn(
-                $skill['name'],
-                $skill['level']
-            )
-        );
     }
 
 }

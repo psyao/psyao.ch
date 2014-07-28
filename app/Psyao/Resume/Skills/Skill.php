@@ -11,14 +11,21 @@ use Str;
 class Skill extends Eloquent
 {
     /**
-     * Learn a new skill.
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['name', 'slug', 'level'];
+
+    /**
+     * Build a new skill.
      *
      * @param $name
      * @param $level
      *
      * @return static
      */
-    public static function learn($name, $level)
+    public static function build($name, $level)
     {
         $slug = Str::slug($name);
 

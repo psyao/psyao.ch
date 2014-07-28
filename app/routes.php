@@ -16,3 +16,15 @@ Route::post('contact', [
     'uses' => 'ContactController@store'
 ]);
 
+Route::group(
+    [
+        'prefix' => 'admin'
+    ],
+    function ()
+    {
+        /**
+         * Skills
+         */
+        Route::resource('skills', 'SkillsController');
+    }
+);
