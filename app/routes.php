@@ -16,6 +16,9 @@ Route::post('contact', [
     'uses' => 'ContactController@store'
 ]);
 
+/**
+ * Admin
+ */
 Route::group(
     [
         'prefix' => 'admin'
@@ -26,5 +29,9 @@ Route::group(
          * Skills
          */
         Route::resource('skills', 'SkillsController');
+        Route::get('skills/{id}/delete', [
+                'as' => 'admin.skills.delete',
+                'uses' => 'SkillsController@delete'
+            ]);
     }
 );

@@ -27,8 +27,6 @@ class Skill extends Eloquent
      */
     public static function build($name, $level)
     {
-        $slug = Str::slug($name);
-
-        return new static(compact('name', 'slug', 'level'));
+        return new static(compact('name', 'level'));
     }
 }

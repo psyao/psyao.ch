@@ -37,6 +37,7 @@ Psyao\Resume\Educations\Course:
 
 Psyao\Resume\Skills\Skill:
   name: $string
+  slug: $string
   level: $integer
   created_at: $date
   updated_at: $date

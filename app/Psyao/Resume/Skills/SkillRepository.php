@@ -1,5 +1,7 @@
 <?php namespace Psyao\Resume\Skills;
 
+use Str;
+
 /**
  * Class SkillRepository
  *
@@ -18,7 +20,17 @@ class SkillRepository
     }
 
     /**
-     * Persist a new skill.
+     * @param integer $id
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|static
+     */
+    public function getById($id)
+    {
+        return Skill::findOrFail($id);
+    }
+
+    /**
+     * Persist a skill.
      *
      * @param Skill $skill
      *
@@ -26,6 +38,24 @@ class SkillRepository
      */
     public function save(Skill $skill)
     {
-        return $skill->save();
+        return $this->setSlugFromName($skill)->save();
+    }
+
+    /**
+     * @param Skill $skill
+     *
+     * @return Skill
+     */
+    protected function setSlugFromName(Skill $skill)
+    {
+        if (empty($skill->slug) || $skill->isDirty('name'))
+        {
+            $slug = Str::slug($skill->name);
+            $slugCount = count(Skill::whereRaw("slug REGEXP '^{$slug}(-[0-9]*)?$'")->get());
+
+            $skill->slug = ($slugCount > 0) ? "{$slug}-{$slugCount}" : $slug;
+        }
+
+        return $skill;
     }
 } 
