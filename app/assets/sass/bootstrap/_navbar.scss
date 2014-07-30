@@ -28,12 +28,30 @@
           &:hover,
           &:focus {
             background: darken($brand-danger, 8%);
-            padding-left: 20px;
+            padding-left: 30px;
           }
         }
 
         & > .active > a {
           background: darken($brand-danger, 8%);
+        }
+
+        & > .dropdown-header {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 8px 10px 0 10px;
+
+          & ~ li a {
+            font-size: 12px;
+            padding: 5px 10px 5px 33px;
+            text-transform: capitalize;
+
+            &:hover,
+            &:focus {
+              padding-left: 40px;
+            }
+          }
         }
       }
     }

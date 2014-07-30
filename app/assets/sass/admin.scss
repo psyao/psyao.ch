@@ -1,0 +1,38 @@
+//
+// Bootstrap 3.2.0
+// --------------------------------------------------
+
+@import "bootstrap/bootstrap-admin";
+
+
+//
+// Custom bootstrap 3.2
+// --------------------------------------------------
+
+// Core CSS
+// -------------------------
+@import 'bootstrap/scaffolding';
+//@import 'bootstrap/type';
+@import 'bootstrap/tables';
+@import 'bootstrap/forms';
+@import 'bootstrap/buttons';
+
+// Components
+// -------------------------
+@import 'bootstrap/input-groups';
+@import 'bootstrap/navbar';
+@import 'bootstrap/alerts';
+@import 'bootstrap/progress-bars';
+
+
+//
+// Admin stylesheet
+// --------------------------------------------------
+
+// Common styles
+// -------------------------
+@import 'footer';
+
+// Admin page styles
+// -------------------------
+@import 'admin-bootstrap';

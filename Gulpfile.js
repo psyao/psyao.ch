@@ -9,8 +9,15 @@ gulp.task('css', function() {
     .pipe(gulp.dest('public/css'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('app/assets/sass/**/*.scss', ['css']);
+gulp.task('css-admin', function() {
+  gulp.src('app/assets/sass/admin.scss')
+    .pipe(sass())
+    .pipe(autoprefixer('last 10 version'))
+    .pipe(gulp.dest('public/css'));
 });
 
-gulp.task('default', ['css', 'watch']);
+gulp.task('watch', function() {
+  gulp.watch('app/assets/sass/**/*.scss', ['css', 'css-admin']);
+});
+
+gulp.task('default', ['css', 'css-admin', 'watch']);

@@ -1,0 +1,10 @@
+.input-group {
+  & > .input-group-addon {
+    color: #fff;
+    border-radius: 0;
+  }
+
+  & .form-control {
+    border-radius: 0;
+  }
+}

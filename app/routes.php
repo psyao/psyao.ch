@@ -26,6 +26,14 @@ Route::group(
     function ()
     {
         /**
+         * Administration
+         */
+        Route::get('/', [
+                'as' => 'admin_path',
+                'uses' => 'AdminController@index'
+            ]);
+
+        /**
          * Skills
          */
         Route::resource('skills', 'SkillsController');

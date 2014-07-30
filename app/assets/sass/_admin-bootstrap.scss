@@ -1,0 +1,18 @@
+.skills {
+  background: lighten($brand-primary, 60%);
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.table > tbody > tr > td.actions {
+  text-align: right;
+
+    padding-top: 6px;
+}
