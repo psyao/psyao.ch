@@ -13,7 +13,8 @@
     "way/generators": "~2.0",
     "codeception/codeception": "2.0.*@dev",
     "laracasts/testdummy": "~1.0",
-    "barryvdh/laravel-ide-helper": "1.*"
+    "barryvdh/laravel-ide-helper": "1.*",
+    "barryvdh/laravel-debugbar": "~1.8"
   },
   "autoload": {
     "classmap": [
