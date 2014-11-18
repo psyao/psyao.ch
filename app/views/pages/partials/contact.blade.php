@@ -77,18 +77,10 @@
                         <a href="https://twitter.com/elysionworkshop" title="Page Twitter" target="_blank"><span class="fa fa-twitter fa-fw"></span></a>
                     </div>
                     <div class="col-xs-3">
-                        <a href="https://bitbucket.org/psyao/" title="Page BitBucket" target="_blank"><span class="fa fa-bitbucket fa-fw"></span></a>
+                        <a href="https://github.com/psyao/" title="Page GitHub" target="_blank"><span class="fa fa-github fa-fw"></span></a>
                     </div>
                 </div>
             </div>
-
-<!--            <div class="social text-center">-->
-<!--                <a href="https://www.facebook.com/steve.aguet" title="Profil Facebook" target="_blank"><span class="fa fa-facebook fa-fw"></span></a>-->
-<!--                <a href="https://www.linkedin.com/pub/steve-aguet/83/915/48a/" title="Profil LinkedIn" target="_blank"><span class="fa fa-linkedin fa-fw"></span></a>-->
-<!--                <a href="https://twitter.com/elysionworkshop" title="Page Twitter" target="_blank"><span class="fa fa-twitter fa-fw"></span></a>-->
-<!--                <a href="https://github.com/psyao" title="Page Github" target="_blank"><span class="fa fa-github fa-fw"></span></a>-->
-<!--                <a href="https://bitbucket.org/psyao/" title="Page BitBucket" target="_blank"><span class="fa fa-bitbucket fa-fw"></span></a>-->
-<!--            </div>-->
         </div>
     </div>
 </section>
