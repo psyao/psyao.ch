@@ -22,7 +22,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{ route('home') }}" title="Back to Site"><span class="fa fa-home fa-fw"></a>
+                    <a href="{{ route('home') }}" title="Back to Site"><span class="fa fa-home fa-fw"></span></a>
                 </li>
             </ul>
         </div>

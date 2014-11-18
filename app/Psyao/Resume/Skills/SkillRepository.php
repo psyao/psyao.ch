@@ -22,7 +22,7 @@ class SkillRepository
     /**
      * @param integer $id
      *
-     * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|static
+     * @return Skill
      */
     public function getById($id)
     {

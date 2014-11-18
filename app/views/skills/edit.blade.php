@@ -5,7 +5,7 @@
     <div id="skills" class="anchor">&nbsp;</div>
     <div class="container">
         <div class="col-sm-6 col-sm-offset-3">
-            <h1>Edit &laquo;{{ $skill->name }}&raquo;</h1>
+            <h1>Edit &laquo;{{ $skill->name }}&raquo; skill</h1>
             {{ Form::model($skill, ['route' => ['admin.skills.update', $skill->id], 'method' => 'PATCH', 'role' => 'form']) }}
                 <!-- Name Form Input -->
                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
