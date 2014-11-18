@@ -20,6 +20,7 @@
                         <li><a href="#resume">Expériences</a></li>
                         <li><a href="#education">Formations</a></li>
                         <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#languages">Langues</a></li>
                     </ul>
                 </li>
                 <li>
